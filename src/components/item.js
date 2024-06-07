@@ -31,7 +31,7 @@ class Item extends React.Component {
             </>
           ) : null}
           <Link
-            href={`/items/${id}`}
+            href={"#" || `/items/${id}`}
             onClick={() => {}}
             className="crs_cate_box"
           >
