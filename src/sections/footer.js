@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { trim_id } from "../assets/utils/functions";
+import { organisation_name } from "../assets/utils/constants";
 
 const scroll_to_top = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -108,7 +109,7 @@ class Footer extends React.Component {
             <div className="row align-items-center">
               <div className="col-lg-12 col-md-12 text-center">
                 <p className="mb-0">
-                  © {new Date().getFullYear()} Calculator Master. All rights
+                  © {new Date().getFullYear()} {organisation_name}. All rights
                   reserved.
                 </p>
               </div>

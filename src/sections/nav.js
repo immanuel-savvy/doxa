@@ -13,6 +13,7 @@ import {
 import Padder from "../components/padder";
 import Link from "next/link";
 import { to_title } from "../assets/utils/functions";
+import { organisation_name } from "../assets/utils/constants";
 
 class Custom_nav extends React.Component {
   constructor(props) {
@@ -45,7 +46,7 @@ class Custom_nav extends React.Component {
             <div id="navigation" className="navigation navigation-landscape">
               <Navbar light expand="lg">
                 <NavbarBrand href="/" className="nav-brand">
-                  <h2 className="text-dark">Calculator Master</h2>
+                  <h2 className="text-dark">{organisation_name}</h2>
                 </NavbarBrand>
                 <NavbarToggler
                   ref={(nav_toggle) => (this.nav_toggle = nav_toggle)}

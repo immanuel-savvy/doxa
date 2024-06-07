@@ -55,7 +55,7 @@ const post_request = async (path, data, header) => {
     let ftch = await fetch(
       path.startsWith("http") ? path : `${domain}/${path}`,
       {
-        method: "POST",
+        method: header?.method || "POST",
         // mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
