@@ -88,20 +88,7 @@ class Custom_nav extends React.Component {
                         style={{
                           backgroundColor: "transparent",
                         }}
-                      >
-                        <Link
-                          style={{
-                            textDecorationColor: "none",
-                            borderLeftColor: "#ccc",
-                            borderLeftWidth: 1,
-                            borderLeftStyle: "solid",
-                            paddingLeft: 10,
-                          }}
-                          href="/blog"
-                        >
-                          <span style={{ color: "#000" }}>Blog</span>
-                        </Link>
-                      </NavLink>
+                      ></NavLink>
                     </NavItem>
                   </Nav>
                 </Collapse>
